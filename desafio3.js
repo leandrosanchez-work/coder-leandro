@@ -18,7 +18,7 @@ app.get("/productos", async (req, res) => {
   res.send(data);
 });
 
-app.get("/randomProductos", async (req, res) => {
+app.get("/productosRandom", async (req, res) => {
     //! Números aleatorios del 1 al 10
   const producto = await contenedor.getRandom();
   //! Si el id generado no coincide con ningún producto, devuelve null; de lo contrario, envía la información solicitada
